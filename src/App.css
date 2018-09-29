@@ -5,10 +5,25 @@ body{
   color: white;
 }
 
+.logoLetter{
+  fill: white;
+}
 
-#universe{
-  max-width: 100%;
-  max-height: 100%;
+.splash{
+  font-family: 'Kaushan Script', sans-serif;
+  text-align: center;
+  position: relative;
+  left: 4%;
+  top: 40px;
+  font-size:25px;
+}
+
+.splash svg{
+  width:15%;
+}
+
+.universe svg{
+  position: fixed;
 }
 
 
@@ -112,21 +127,21 @@ stroke:#b2b2b2;
     transition: 120s linear;
 }
 
-svg:hover .bStar{
-    -webkit-transform: translate(5em,-5em);
-    -moz-transform: translate(5em,-5em);
-    -o-transform: translate(5em,-5em);
-    -ms-transform: translate(5em,-5em);
-    transform: translate(5em,-5em);
+body:hover .bStar{
+    -webkit-transform: translate(50px,-50px);
+    -moz-transform: translate(50px,-50px);
+    -o-transform: translate(50px,-50px);
+    -ms-transform: translate(50px,-50px);
+    transform: translate(50px,-50px);
   }
 
 
-svg:hover .yStar{
-    -webkit-transform: translate(10em,0);
-    -moz-transform: translate(10em,0);
-    -o-transform: translate(10em,0);
-    -ms-transform: translate(10em,0);
-    transform: translate(10em,0);
+body:hover .yStar{
+    -webkit-transform: translate(100px,0);
+    -moz-transform: translate(100px,0);
+    -o-transform: translate(100px,0);
+    -ms-transform: translate(100px,0);
+    transform: translate(100px,0);
   }
 
 /* end of star animation */
@@ -134,38 +149,42 @@ svg:hover .yStar{
 /* planet rotation animation */
 .rotEarth, .rotMars{
     transform: rotate(0deg);
-    transition: transform 600s;
+    transition: transform 600s linear;
 }
 
-svg:hover .rotEarth{
+body:hover .rotEarth{
   transform: rotate(3600deg);
-  transition: transform 600s;
+  transition: transform 600s linear;
 }
 
-svg:hover .rotMars{
+body:hover .rotMars{
   transform: rotate(3600deg);
-  transition: transform 600s;
+  transition: transform 600s linear;
 }
 
 /* end of planet rotation animation */
 
 /* Stratios animation */
 
+
 .stratios{
 transform-origin: 317.25px 202.74px;
 offset-path: path("m317.25 202.74c3.5277 7.4982 7.0555 14.996 6.1108 20.731-0.94472 5.7343-6.3622 9.7047-11.843 11.626s-11.024 1.7933-31.562-7.2369-56.066-26.96-84.162-50.399-48.759-52.385-62.933-66.858-21.859-14.473-28.453-12.522c-6.5935 1.9509-11.927 5.7338-14.762 10.601s-3.0869 10.759-0.69288 14.153c2.3941 3.3943 7.4335 4.2908 11.641 3.9425 4.2075-0.34832 7.8879-2.0854 11.415-3.7503");
-offset-rotate: auto 33deg;
+offset-rotate: auto 60deg;
 animation: to 120s linear infinite;
 }
 
 @keyframes to{
+  20%{
+    offset-rotate: auto 33deg;
+  }
   80%{
     offset-rotate: auto 33deg;
   }
   100% {
     motion-offset: 100%;
     offset-distance: 99%;
-    offset-rotate: auto 213deg;
+    offset-rotate: auto 165deg;
   }
 }
 
