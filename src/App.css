@@ -13,13 +13,13 @@ body{
   font-family: 'Kaushan Script', sans-serif;
   text-align: center;
   position: relative;
-  left: 4%;
-  top: 40px;
-  font-size:25px;
+  left: -12%;
+  top: 60px;
+  font-size:35px;
 }
 
 .splash svg{
-  width:15%;
+  width:20%;
 }
 
 .universe svg{

@@ -19,9 +19,9 @@ class Splash extends Component{
   render() {
     return (
 <div className='splash'>
-  <LogoSVG />
+  <LogoSVG /><br/><br/><br/>
   <p>Think ahead,<br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build to last.
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build to last.
   </p>
 </div>
     )}
