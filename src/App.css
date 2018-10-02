@@ -58,15 +58,15 @@ body{
 }
 
 .accordion:hover, .panel2 h3:hover {
-    color: black;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 .accordion, .panel2 h3 {
-    cursor: pointer;
-    border: none;
-    outline: none;
-    transition: 0.4s;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.4s;
 }
 
 .universe svg{
@@ -84,8 +84,8 @@ body{
 
 .mars
 {
-fill:#d83636;
-stroke-width:.26458;
+  fill:#d83636;
+  stroke-width:.26458;
 }
 
 .marsLand{
@@ -98,13 +98,13 @@ stroke-width:.26458;
 }
 
 .yStar{
-fill:#fcffcf;
-stroke:#b2b2b2;
+  fill:#fcffcf;
+  stroke:#b2b2b2;
 }
 
 .bStar{
-fill:#9dcefd;
-stroke:#b2b2b2;
+  fill:#9dcefd;
+  stroke:#b2b2b2;
 }
 
 .earth{
@@ -143,14 +143,14 @@ stroke:#b2b2b2;
   stroke: #ffffff;
 }
 
-  @keyframes dash {
-    from {
-      stroke-dashoffset: 320;
-    }
-    to {
-      stroke-dashoffset: 0;
-    }
+@keyframes dash {
+  from {
+    stroke-dashoffset: 320;
   }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 /*end of trajectory animation */
 
 /* star animation */
@@ -159,9 +159,9 @@ stroke:#b2b2b2;
   stroke-width:.0078589;
   position: relative;
   -webkit-transition: 150s linear;
-    -moz-transition: 150s linear;
-    -o-transition: 150s linear;
-    transition: 150s linear;
+  -moz-transition: 150s linear;
+  -o-transition: 150s linear;
+  transition: 150s linear;
 }
 
 .bStar{
@@ -169,34 +169,34 @@ stroke:#b2b2b2;
   stroke-width:.0078589;
   position: relative;
   -webkit-transition: 120s linear;
-    -moz-transition: 120s linear;
-    -o-transition: 120s linear;
-    transition: 120s linear;
+  -moz-transition: 120s linear;
+  -o-transition: 120s linear;
+  transition: 120s linear;
 }
 
 body:hover .bStar{
-    -webkit-transform: translate(50px,-50px);
-    -moz-transform: translate(50px,-50px);
-    -o-transform: translate(50px,-50px);
-    -ms-transform: translate(50px,-50px);
-    transform: translate(50px,-50px);
-  }
+  -webkit-transform: translate(50px,-50px);
+  -moz-transform: translate(50px,-50px);
+  -o-transform: translate(50px,-50px);
+  -ms-transform: translate(50px,-50px);
+  transform: translate(50px,-50px);
+}
 
 
 body:hover .yStar{
-    -webkit-transform: translate(100px,0);
-    -moz-transform: translate(100px,0);
-    -o-transform: translate(100px,0);
-    -ms-transform: translate(100px,0);
-    transform: translate(100px,0);
-  }
+  -webkit-transform: translate(100px,0);
+  -moz-transform: translate(100px,0);
+  -o-transform: translate(100px,0);
+  -ms-transform: translate(100px,0);
+  transform: translate(100px,0);
+}
 
 /* end of star animation */
 
 /* planet rotation animation */
 .rotEarth, .rotMars{
-    transform: rotate(0deg);
-    transition: transform 600s linear;
+  transform: rotate(0deg);
+  transition: transform 600s linear;
 }
 
 body:hover .rotEarth{
@@ -215,10 +215,10 @@ body:hover .rotMars{
 
 
 .stratios{
-transform-origin: 317.25px 202.74px;
-offset-path: path("m317.25 202.74c3.5277 7.4982 7.0555 14.996 6.1108 20.731-0.94472 5.7343-6.3622 9.7047-11.843 11.626s-11.024 1.7933-31.562-7.2369-56.066-26.96-84.162-50.399-48.759-52.385-62.933-66.858-21.859-14.473-28.453-12.522c-6.5935 1.9509-11.927 5.7338-14.762 10.601s-3.0869 10.759-0.69288 14.153c2.3941 3.3943 7.4335 4.2908 11.641 3.9425 4.2075-0.34832 7.8879-2.0854 11.415-3.7503");
-offset-rotate: auto 60deg;
-animation: to 120s linear infinite;
+  transform-origin: 317.25px 202.74px;
+  offset-path: path("m317.25 202.74c3.5277 7.4982 7.0555 14.996 6.1108 20.731-0.94472 5.7343-6.3622 9.7047-11.843 11.626s-11.024 1.7933-31.562-7.2369-56.066-26.96-84.162-50.399-48.759-52.385-62.933-66.858-21.859-14.473-28.453-12.522c-6.5935 1.9509-11.927 5.7338-14.762 10.601s-3.0869 10.759-0.69288 14.153c2.3941 3.3943 7.4335 4.2908 11.641 3.9425 4.2075-0.34832 7.8879-2.0854 11.415-3.7503");
+  offset-rotate: auto 60deg;
+  animation: to 120s linear infinite;
 }
 
 @keyframes to{
@@ -240,32 +240,32 @@ animation: to 120s linear infinite;
 
 /* Phones */
 @media only screen and (max-width: 768px) {
-.universe svg{
-top:0;
-height: 100%;
-position: fixed;
-}
+  .universe svg{
+    top:0;
+    height: 100%;
+    position: fixed;
+  }
 
-.say {
-  margin-top: 100px;
-  transform: inherit;
-  display: block;
-  position: relative;
-  width: 95%;
-  left: 2.5%;
-}
+  .say {
+    margin-top: 100px;
+    transform: inherit;
+    display: block;
+    position: relative;
+    width: 95%;
+    left: 2.5%;
+  }
 
-.ask{
-  margin-top: 40px;
-  transform: inherit;
-  display: block;
-  position: relative;
-  width: 95%;
-  left: 2.5%;
-}
+  .ask{
+    margin-top: 40px;
+    transform: inherit;
+    display: block;
+    position: relative;
+    width: 95%;
+    left: 2.5%;
+  }
 
-.App {
-  position: relative;
-}
+  .App {
+    position: relative;
+  }
 
 }
