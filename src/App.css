@@ -1,8 +1,33 @@
 
 
 body{
-  background-color: rgba(20,20,20,255);
+  background-color: rgb(0, 6, 26);
   color: white;
+}
+
+.App{
+  width:100%;
+}
+
+.ask{
+  position:fixed;
+  left:45%;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.availability{
+  font-size:18px;
+}
+
+.say{
+  position: fixed;
+  left: 60%;
+  text-align: center;
+  right:3%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .logoLetter{
@@ -10,16 +35,38 @@ body{
 }
 
 .splash{
-  font-family: 'Kaushan Script', sans-serif;
   text-align: center;
   position: relative;
-  left: -12%;
-  top: 60px;
-  font-size:35px;
 }
 
 .splash svg{
-  width:20%;
+  fill: white;
+  width: 20%;
+
+}
+
+.say a:link{
+  color: white;
+}
+
+.say a:hover, a:visited{
+  color: gray;
+}
+
+#nav h2{
+  cursor: pointer;
+}
+
+.accordion:hover, .panel2 h3:hover {
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.accordion, .panel2 h3 {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.4s;
 }
 
 .universe svg{
@@ -188,9 +235,37 @@ animation: to 120s linear infinite;
   }
 }
 
-@keyframes from{
-
-}
-
 
 /* end of Stratios animation */
+
+/* Phones */
+@media only screen and (max-width: 768px) {
+.universe svg{
+top:0;
+height: 100%;
+position: fixed;
+}
+
+.say {
+  margin-top: 100px;
+  transform: inherit;
+  display: block;
+  position: relative;
+  width: 95%;
+  left: 2.5%;
+}
+
+.ask{
+  margin-top: 40px;
+  transform: inherit;
+  display: block;
+  position: relative;
+  width: 95%;
+  left: 2.5%;
+}
+
+.App {
+  position: relative;
+}
+
+}
