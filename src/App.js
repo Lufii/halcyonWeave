@@ -74,7 +74,7 @@ class Say extends Component{
       <div>
       <h3>Engulf</h3>
       <p>General purpose inventory management web application accessible from any number of phones, tablets or PCs. New features like incoming/outgoing bulk edit for shipments are in the works. Highly customizable.</p>
-      <a href='http://engulf.halcyonweave.com' target="_blank" rel="noopener noreferrer">Live demo</a><br/>
+      <a href='https://engulf.halcyonweave.com' target="_blank" rel="noopener noreferrer">Live demo</a><br/>
       </div>
     );
     else if(this.props.sayVal==='cildecor')
