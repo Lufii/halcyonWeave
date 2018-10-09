@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import { CSSTransitionGroup } from 'react-transition-group'
+
 
 class App extends Component {
   constructor(props){
@@ -20,11 +22,19 @@ class App extends Component {
       <UniverseSVG />
       <div className='logo'>
       </div>
+      <div className='screen'>
+
+
       <div className='ask'>
       <Ask askChange={this.passAsk}/>
       </div>
+
+
       <div className='say'>
       <Say sayVal={this.state.ask}/>
+      </div>
+
+
       </div>
       </div>
     );
@@ -45,15 +55,18 @@ class Ask extends Component{
     if(this.state.meep===0)
     return(
       <div id='nav'>
+
       <h2 onClick={()=> {this.props.askChange('initial')}}>HalcyonWeave</h2>
       <h1 className="accordion" onClick={()=> {this.setState({meep:1})}}>Projects</h1>
       <h1 className="accordion" onClick={()=> {this.props.askChange('principles')}}>Principles</h1>
       <h1 className="panel3 accordion" onClick={()=> {this.props.askChange('availability')}}>Availability</h1>
+
       </div>
     );
     else if(this.state.meep===1)
     return(
       <div id='nav'>
+
       <h2 onClick={()=> {this.props.askChange('initial')}}>HalcyonWeave</h2>
       <h1 className="accordion" onClick={()=> {this.setState({meep:0})}}>Projects</h1>
       <div className="panel2">
@@ -62,6 +75,7 @@ class Ask extends Component{
       </div>
       <h1 className="accordion" onClick={()=> {this.props.askChange('principles')}}>Principles</h1>
       <h1 className="panel3 accordion" onClick={()=> {this.props.askChange('availability')}}>Availability</h1>
+
       </div>
     );
   }
@@ -72,44 +86,62 @@ class Say extends Component{
     if(this.props.sayVal==='engulf')
     return(
       <div>
+
       <h3>Engulf</h3>
       <p>General purpose inventory management web application accessible from any number of phones, tablets or PCs. New features like incoming/outgoing bulk edit for shipments are in the works. Highly customizable.</p>
       <a href='https://engulf.halcyonweave.com' target="_blank" rel="noopener noreferrer">Live demo</a><br/>
+
       </div>
     );
     else if(this.props.sayVal==='cildecor')
     return(
       <div>
+
       <h3>CIL Decor</h3>
       <p>Presentation page for a wallpaper mounting business</p>
       <p>The creation process involved complete web page design with information structuring, google fonts setup,
       color pallete selection and distribution, considerable video and image editing in addition to domain, webmail and hosting setup</p>
       <a href='http://www.cildecor.com' target="_blank" rel="noopener noreferrer">Live page</a><br/>
+
       </div>
     );
     else if(this.props.sayVal==='principles')
     return(
       <div>
+
       <h3>Generate positive change</h3>
       <h3>Communicate plainly</h3>
       <h3>Build to last</h3>
       <h3>Simple yet thorough</h3>
       <p></p>
 
-
       </div>
     );
     else if(this.props.sayVal==='availability')
     return(
       <div className='availability'>
+
       <p>HalcyonWeave is only undertaking selective pro-bono work right now. If your project is positively changing the world, we might jump in and help, give us a shout!</p>
       <p>Before taking on commercial projects, we're sorting through the legal details. Thanks for being patient.</p>
       <p>contact@halcyonweave.com</p>
+
       </div>
     );
-    else return(   <h1 className='splash'>Think ahead,<br/>
+    else return(
+      <div>
+      <CSSTransitionGroup
+        transitionName="init1"
+          transitionAppear={true}
+          transitionAppearTimeout={3000}
+          transitionEnter={false}
+          transitionLeave={false}>
+    <h1 className='splash'>Think ahead,  <br/>
     Build to last.
-    </h1>);
+    </h1>
+    </CSSTransitionGroup>
+
+    </div>
+  );
   }
 }
 
