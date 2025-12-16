@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { CSSTransitionGroup } from 'react-transition-group'
+import { CSSTransition } from "react-transition-group";
 
 
 class App extends Component {
@@ -129,7 +129,7 @@ class Say extends Component{
     );
     else return(
       <div>
-      <CSSTransitionGroup
+      <CSSTransition
         transitionName="init1"
           transitionAppear={true}
           transitionAppearTimeout={3000}
@@ -138,7 +138,7 @@ class Say extends Component{
     <h1 className='splash'>Think ahead,  <br/>
     Build to last.
     </h1>
-    </CSSTransitionGroup>
+    </CSSTransition>
 
     </div>
   );

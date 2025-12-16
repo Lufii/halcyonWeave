@@ -1,235 +1,240 @@
-body{
-  background-color: rgb(0, 6, 26);
-  color: white;
+body {
+    background-color: rgb(0, 6, 26);
+    color: white;
 }
 
-.App{
-  width:100%;
+.App {
+    width: 100%;
 }
 
-.ask{
-  position:fixed;
-  left:45%;
-  text-align: center;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+.ask {
+    position: fixed;
+    left: 45%;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
-.availability{
-  font-size:18px;
+.availability {
+    font-size: 18px;
 }
 
-.say{
-  position: fixed;
-  left: 60%;
-  text-align: center;
-  right:3%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+.say {
+    position: fixed;
+    left: 60%;
+    text-align: center;
+    right: 3%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
-.logoLetter{
-  fill: white;
-}
-
-
-
-.say a:link{
-  color: white;
-}
-
-.say a:hover, a:visited{
-  color: gray;
-}
-
-#nav h2{
-  cursor: pointer;
-}
-
-.accordion:hover, .panel2 h3:hover {
-  color: black;
-  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-}
-
-.accordion, .panel2 h3 {
-  cursor: pointer;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
-
-.universe svg{
-  position: fixed;
+.logoLetter {
+    fill: white;
 }
 
 
 
-.orbit, .trajectory{
-  fill: none;
-  stroke-opacity: .24314;
-  stroke-width: 1.267;
-  stroke: #b2b2b2;
+.say a:link {
+    color: white;
 }
 
-.mars
-{
-  fill:#d83636;
-  stroke-width:.26458;
+.say a:hover,
+a:visited {
+    color: gray;
 }
 
-.marsLand{
-  fill:#cf7272;
+#nav h2 {
+    cursor: pointer;
 }
 
-.marsLand path{
-  stroke-width:.25105;
-  stroke-width:.27619;
+.accordion:hover,
+.panel2 h3:hover {
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
-.yStar{
-  fill:#fcffcf;
-  stroke:#b2b2b2;
+.accordion,
+.panel2 h3 {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.4s;
 }
 
-.bStar{
-  fill:#9dcefd;
-  stroke:#b2b2b2;
+.universe svg {
+    position: fixed;
 }
 
-.earth{
-  fill:#1365be;
-  stroke-width:.44017;
+
+
+.orbit,
+.trajectory {
+    fill: none;
+    stroke-opacity: .24314;
+    stroke-width: 1.267;
+    stroke: #b2b2b2;
 }
 
-.earthLand{
-
+.mars {
+    fill: #d83636;
+    stroke-width: .26458;
 }
 
-.earthLand path{
-  fill:#20da27;
+.marsLand {
+    fill: #cf7272;
 }
 
-.stratios, .antarctica{
-  fill: black;
-  stroke-width:.26458px;
-  stroke:#fff;
+.marsLand path {
+    stroke-width: .25105;
+    stroke-width: .27619;
 }
 
-.antarctica{
-  fill:white;
+.yStar {
+    fill: #fcffcf;
+    stroke: #b2b2b2;
+}
+
+.bStar {
+    fill: #9dcefd;
+    stroke: #b2b2b2;
+}
+
+.earth {
+    fill: #1365be;
+    stroke-width: .44017;
+}
+
+.earthLand {}
+
+.earthLand path {
+    fill: #20da27;
+}
+
+.stratios,
+.antarctica {
+    fill: black;
+    stroke-width: .26458px;
+    stroke: #fff;
+}
+
+.antarctica {
+    fill: white;
 }
 
 
 /* trajectory animation */
-.trajectory{
-  stroke-opacity: .24314;
-  -webkit-stroke-dasharray: 370;
-  -moz-stroke-dasharray: 370;
-  -o-stroke-dasharray: 370;
-  -ms-stroke-dasharray: 370;
-  stroke-dasharray: 370;
+.trajectory {
+    stroke-opacity: .24314;
+    -webkit-stroke-dasharray: 370;
+    -moz-stroke-dasharray: 370;
+    -o-stroke-dasharray: 370;
+    -ms-stroke-dasharray: 370;
+    stroke-dasharray: 370;
 
-  -webkit-stroke-dashoffset: 370;
-  -moz-stroke-dashoffset: 370;
-  -o-stroke-dashoffset: 370;
-  -ms-stroke-dashoffset: 370;
-  stroke-dashoffset: 0;
+    -webkit-stroke-dashoffset: 370;
+    -moz-stroke-dashoffset: 370;
+    -o-stroke-dashoffset: 370;
+    -ms-stroke-dashoffset: 370;
+    stroke-dashoffset: 0;
 
 
-  -webkit-animation: dash 5s linear;
-  -moz-animation: dash 5s linear;
-  -o-animation: dash 5s linear;
-  -ms-animation: dash 5s linear;
-  animation: dash 5s linear;
+    -webkit-animation: dash 5s linear;
+    -moz-animation: dash 5s linear;
+    -o-animation: dash 5s linear;
+    -ms-animation: dash 5s linear;
+    animation: dash 5s linear;
 
-  stroke-width: 0.8;
-  stroke-linecap:round;
-  stroke-linejoin:round;
-  stroke: #ffffff;
+    stroke-width: 0.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #ffffff;
 }
 
 @keyframes dash {
-  from {
-    -webkit-stroke-dashoffset: 320;
-    -moz-stroke-dashoffset: 320;
-    -o-stroke-dashoffset: 320;
-    -ms-stroke-dashoffset: 320;
-    stroke-dashoffset: 320;
-  }
-  to {
-    -webkit-stroke-dashoffset: 0;
-    -moz-stroke-dashoffset: 0;
-    -o-stroke-dashoffset: 0;
-    -ms-stroke-dashoffset: 0;
-    stroke-dashoffset: 0;
-  }
+    from {
+        -webkit-stroke-dashoffset: 320;
+        -moz-stroke-dashoffset: 320;
+        -o-stroke-dashoffset: 320;
+        -ms-stroke-dashoffset: 320;
+        stroke-dashoffset: 320;
+    }
+
+    to {
+        -webkit-stroke-dashoffset: 0;
+        -moz-stroke-dashoffset: 0;
+        -o-stroke-dashoffset: 0;
+        -ms-stroke-dashoffset: 0;
+        stroke-dashoffset: 0;
+    }
 }
+
 /*end of trajectory animation */
 
 /* star animation */
-.yStar{
-  stroke-opacity:.24314;
-  stroke-width:.0078589;
-  position: relative;
-  -webkit-transition: 150s linear;
-  -moz-transition: 150s linear;
-  -o-transition: 150s linear;
-  -ms-transition: 150s linear;
-  transition: 150s linear;
+.yStar {
+    stroke-opacity: .24314;
+    stroke-width: .0078589;
+    position: relative;
+    -webkit-transition: 150s linear;
+    -moz-transition: 150s linear;
+    -o-transition: 150s linear;
+    -ms-transition: 150s linear;
+    transition: 150s linear;
 }
 
-.bStar{
-  stroke-opacity:.24314;
-  stroke-width:.0078589;
-  position: relative;
-  -webkit-transition: 120s linear;
-  -moz-transition: 120s linear;
-  -o-transition: 120s linear;
-  -ms-transition: 12s linear;
-  transition: 120s linear;
+.bStar {
+    stroke-opacity: .24314;
+    stroke-width: .0078589;
+    position: relative;
+    -webkit-transition: 120s linear;
+    -moz-transition: 120s linear;
+    -o-transition: 120s linear;
+    -ms-transition: 12s linear;
+    transition: 120s linear;
 }
 
-body:hover .bStar{
-  -webkit-transform: translate(50px,-50px);
-  -moz-transform: translate(50px,-50px);
-  -o-transform: translate(50px,-50px);
-  -ms-transform: translate(50px,-50px);
-  transform: translate(50px,-50px);
+body:hover .bStar {
+    -webkit-transform: translate(50px, -50px);
+    -moz-transform: translate(50px, -50px);
+    -o-transform: translate(50px, -50px);
+    -ms-transform: translate(50px, -50px);
+    transform: translate(50px, -50px);
 }
 
 
-body:hover .yStar{
-  -webkit-transform: translate(100px,0);
-  -moz-transform: translate(100px,0);
-  -o-transform: translate(100px,0);
-  -ms-transform: translate(100px,0);
-  transform: translate(100px,0);
+body:hover .yStar {
+    -webkit-transform: translate(100px, 0);
+    -moz-transform: translate(100px, 0);
+    -o-transform: translate(100px, 0);
+    -ms-transform: translate(100px, 0);
+    transform: translate(100px, 0);
 }
 
 /* end of star animation */
 
 /* planet rotation animation */
-.rotEarth, .rotMars{
-  transform: rotate(0deg);
-  transition: transform 600s linear;
+.rotEarth,
+.rotMars {
+    transform: rotate(0deg);
+    transition: transform 600s linear;
 }
 
-body:hover .rotEarth{
-  transform: rotate(3600deg);
-  transition: transform 600s linear;
+body:hover .rotEarth {
+    transform: rotate(3600deg);
+    transition: transform 600s linear;
 }
 
-body:hover .rotMars{
-  transform: rotate(3600deg);
-  transition: transform 600s linear;
+body:hover .rotMars {
+    transform: rotate(3600deg);
+    transition: transform 600s linear;
 }
 
 /* end of planet rotation animation */
@@ -237,61 +242,63 @@ body:hover .rotMars{
 /* Stratios animation */
 
 
-.stratios{
-  -webkit-transform-origin: 317.25px 202.74px;
-  -moz-transform-origin: 317.25px 202.74px;
-  -o-transform-origin: 317.25px 202.74px;
-  -ms-transform-origin: 317.25px 202.74px;
-  transform-origin: 317.25px 202.74px;
+.stratios {
+    -webkit-transform-origin: 317.25px 202.74px;
+    -moz-transform-origin: 317.25px 202.74px;
+    -o-transform-origin: 317.25px 202.74px;
+    -ms-transform-origin: 317.25px 202.74px;
+    transform-origin: 317.25px 202.74px;
 
-  -webkit-offset-path: path("m317.25 202.74c3.5277 7.4982 7.0555 14.996 6.1108 20.731-0.94472 5.7343-6.3622 9.7047-11.843 11.626s-11.024 1.7933-31.562-7.2369-56.066-26.96-84.162-50.399-48.759-52.385-62.933-66.858-21.859-14.473-28.453-12.522c-6.5935 1.9509-11.927 5.7338-14.762 10.601s-3.0869 10.759-0.69288 14.153c2.3941 3.3943 7.4335 4.2908 11.641 3.9425 4.2075-0.34832 7.8879-2.0854 11.415-3.7503");
-  -moz-offset-path: path("m317.25 202.74c3.5277 7.4982 7.0555 14.996 6.1108 20.731-0.94472 5.7343-6.3622 9.7047-11.843 11.626s-11.024 1.7933-31.562-7.2369-56.066-26.96-84.162-50.399-48.759-52.385-62.933-66.858-21.859-14.473-28.453-12.522c-6.5935 1.9509-11.927 5.7338-14.762 10.601s-3.0869 10.759-0.69288 14.153c2.3941 3.3943 7.4335 4.2908 11.641 3.9425 4.2075-0.34832 7.8879-2.0854 11.415-3.7503");
-  -o-offset-path: path("m317.25 202.74c3.5277 7.4982 7.0555 14.996 6.1108 20.731-0.94472 5.7343-6.3622 9.7047-11.843 11.626s-11.024 1.7933-31.562-7.2369-56.066-26.96-84.162-50.399-48.759-52.385-62.933-66.858-21.859-14.473-28.453-12.522c-6.5935 1.9509-11.927 5.7338-14.762 10.601s-3.0869 10.759-0.69288 14.153c2.3941 3.3943 7.4335 4.2908 11.641 3.9425 4.2075-0.34832 7.8879-2.0854 11.415-3.7503");
-  -ms-offset-path: path("m317.25 202.74c3.5277 7.4982 7.0555 14.996 6.1108 20.731-0.94472 5.7343-6.3622 9.7047-11.843 11.626s-11.024 1.7933-31.562-7.2369-56.066-26.96-84.162-50.399-48.759-52.385-62.933-66.858-21.859-14.473-28.453-12.522c-6.5935 1.9509-11.927 5.7338-14.762 10.601s-3.0869 10.759-0.69288 14.153c2.3941 3.3943 7.4335 4.2908 11.641 3.9425 4.2075-0.34832 7.8879-2.0854 11.415-3.7503");
-  offset-path: path("m317.25 202.74c3.5277 7.4982 7.0555 14.996 6.1108 20.731-0.94472 5.7343-6.3622 9.7047-11.843 11.626s-11.024 1.7933-31.562-7.2369-56.066-26.96-84.162-50.399-48.759-52.385-62.933-66.858-21.859-14.473-28.453-12.522c-6.5935 1.9509-11.927 5.7338-14.762 10.601s-3.0869 10.759-0.69288 14.153c2.3941 3.3943 7.4335 4.2908 11.641 3.9425 4.2075-0.34832 7.8879-2.0854 11.415-3.7503");
+    -webkit-offset-path: path("m317.25 202.74c3.5277 7.4982 7.0555 14.996 6.1108 20.731-0.94472 5.7343-6.3622 9.7047-11.843 11.626s-11.024 1.7933-31.562-7.2369-56.066-26.96-84.162-50.399-48.759-52.385-62.933-66.858-21.859-14.473-28.453-12.522c-6.5935 1.9509-11.927 5.7338-14.762 10.601s-3.0869 10.759-0.69288 14.153c2.3941 3.3943 7.4335 4.2908 11.641 3.9425 4.2075-0.34832 7.8879-2.0854 11.415-3.7503");
+    -moz-offset-path: path("m317.25 202.74c3.5277 7.4982 7.0555 14.996 6.1108 20.731-0.94472 5.7343-6.3622 9.7047-11.843 11.626s-11.024 1.7933-31.562-7.2369-56.066-26.96-84.162-50.399-48.759-52.385-62.933-66.858-21.859-14.473-28.453-12.522c-6.5935 1.9509-11.927 5.7338-14.762 10.601s-3.0869 10.759-0.69288 14.153c2.3941 3.3943 7.4335 4.2908 11.641 3.9425 4.2075-0.34832 7.8879-2.0854 11.415-3.7503");
+    -o-offset-path: path("m317.25 202.74c3.5277 7.4982 7.0555 14.996 6.1108 20.731-0.94472 5.7343-6.3622 9.7047-11.843 11.626s-11.024 1.7933-31.562-7.2369-56.066-26.96-84.162-50.399-48.759-52.385-62.933-66.858-21.859-14.473-28.453-12.522c-6.5935 1.9509-11.927 5.7338-14.762 10.601s-3.0869 10.759-0.69288 14.153c2.3941 3.3943 7.4335 4.2908 11.641 3.9425 4.2075-0.34832 7.8879-2.0854 11.415-3.7503");
+    -ms-offset-path: path("m317.25 202.74c3.5277 7.4982 7.0555 14.996 6.1108 20.731-0.94472 5.7343-6.3622 9.7047-11.843 11.626s-11.024 1.7933-31.562-7.2369-56.066-26.96-84.162-50.399-48.759-52.385-62.933-66.858-21.859-14.473-28.453-12.522c-6.5935 1.9509-11.927 5.7338-14.762 10.601s-3.0869 10.759-0.69288 14.153c2.3941 3.3943 7.4335 4.2908 11.641 3.9425 4.2075-0.34832 7.8879-2.0854 11.415-3.7503");
+    offset-path: path("m317.25 202.74c3.5277 7.4982 7.0555 14.996 6.1108 20.731-0.94472 5.7343-6.3622 9.7047-11.843 11.626s-11.024 1.7933-31.562-7.2369-56.066-26.96-84.162-50.399-48.759-52.385-62.933-66.858-21.859-14.473-28.453-12.522c-6.5935 1.9509-11.927 5.7338-14.762 10.601s-3.0869 10.759-0.69288 14.153c2.3941 3.3943 7.4335 4.2908 11.641 3.9425 4.2075-0.34832 7.8879-2.0854 11.415-3.7503");
 
-  -webkit-offset-rotate: auto 60deg;
-  -moz-offset-rotate: auto 60deg;
-  -o-offset-rotate: auto 60deg;
-  -ms-offset-rotate: auto 60deg;
-  offset-rotate: auto 60deg;
-  animation: to 120s linear infinite;
+    -webkit-offset-rotate: auto 60deg;
+    -moz-offset-rotate: auto 60deg;
+    -o-offset-rotate: auto 60deg;
+    -ms-offset-rotate: auto 60deg;
+    offset-rotate: auto 60deg;
+    animation: to 120s linear infinite;
 }
 
-@keyframes to{
-  20%{
-    -webkit-offset-rotate: auto 33deg;
-    -moz-offset-rotate: auto 33deg;
-    -o-offset-rotate: auto 33deg;
-    -ms-offset-rotate: auto 33deg;
-    offset-rotate: auto 33deg;
-  }
-  80%{
-    -webkit-offset-rotate: auto 33deg;
-    -moz-offset-rotate: auto 33deg;
-    -o-offset-rotate: auto 33deg;
-    -ms-offset-rotate: auto 33deg;
-    offset-rotate: auto 33deg;
-  }
-  100% {
-    -webkit-motion-offset: 100%;
-    -moz-motion-offset: 100%;
-    -o-motion-offset: 100%;
-    -ms-motion-offset: 100%;
-    motion-offset: 100%;
+@keyframes to {
+    20% {
+        -webkit-offset-rotate: auto 33deg;
+        -moz-offset-rotate: auto 33deg;
+        -o-offset-rotate: auto 33deg;
+        -ms-offset-rotate: auto 33deg;
+        offset-rotate: auto 33deg;
+    }
 
-    -webkit-offset-distance: 99%;
-    -moz-offset-distance: 99%;
-    -o-offset-distance: 99%;
-    -ms-offset-distance: 99%;
-    offset-distance: 99%;
+    80% {
+        -webkit-offset-rotate: auto 33deg;
+        -moz-offset-rotate: auto 33deg;
+        -o-offset-rotate: auto 33deg;
+        -ms-offset-rotate: auto 33deg;
+        offset-rotate: auto 33deg;
+    }
 
-    -webkit-offset-rotate: auto 165deg;
-    -moz-offset-rotate: auto 165deg;
-    -o-offset-rotate: auto 165deg;
-    -ms-offset-rotate: auto 165deg;
-    offset-rotate: auto 165deg;
-  }
+    100% {
+        -webkit-motion-offset: 100%;
+        -moz-motion-offset: 100%;
+        -o-motion-offset: 100%;
+        -ms-motion-offset: 100%;
+        motion-offset: 100%;
+
+        -webkit-offset-distance: 99%;
+        -moz-offset-distance: 99%;
+        -o-offset-distance: 99%;
+        -ms-offset-distance: 99%;
+        offset-distance: 99%;
+
+        -webkit-offset-rotate: auto 165deg;
+        -moz-offset-rotate: auto 165deg;
+        -o-offset-rotate: auto 165deg;
+        -ms-offset-rotate: auto 165deg;
+        offset-rotate: auto 165deg;
+    }
 }
 
 
@@ -299,33 +306,33 @@ body:hover .rotMars{
 
 /* Phones */
 @media only screen and (max-width: 768px) {
-  .universe svg{
-    top:0;
-    height: 100%;
-    position: fixed;
-  }
+    .universe svg {
+        top: 0;
+        height: 100%;
+        position: fixed;
+    }
 
-  .say {
-    margin-top: 100px;
-    transform: inherit;
-    display: block;
-    position: relative;
-    width: 95%;
-    left: 2.5%;
-  }
+    .say {
+        margin-top: 100px;
+        transform: inherit;
+        display: block;
+        position: relative;
+        width: 95%;
+        left: 2.5%;
+    }
 
-  .ask{
-    margin-top: 40px;
-    transform: inherit;
-    display: block;
-    position: relative;
-    width: 95%;
-    left: 2.5%;
-  }
+    .ask {
+        margin-top: 40px;
+        transform: inherit;
+        display: block;
+        position: relative;
+        width: 95%;
+        left: 2.5%;
+    }
 
-  .App {
-    position: relative;
-  }
+    .App {
+        position: relative;
+    }
 
 }
 
@@ -333,17 +340,17 @@ body:hover .rotMars{
 
 
 
-.init1-appear{
-  opacity: 0.001;
+.init1-appear {
+    opacity: 0.001;
 }
 
-.init1-appear.init1-appear-active{
-  opacity: 1;
-  -webkit-transition: opacity 3s ease-in;
-  -moz-transition: opacity 3s ease-in;
-  -o-transition: opacity 3s ease-in;
-  -ms-transition: opacity 3s ease-in;
-  transition: opacity 3s ease-in;
+.init1-appear.init1-appear-active {
+    opacity: 1;
+    -webkit-transition: opacity 3s ease-in;
+    -moz-transition: opacity 3s ease-in;
+    -o-transition: opacity 3s ease-in;
+    -ms-transition: opacity 3s ease-in;
+    transition: opacity 3s ease-in;
 }
 
 
